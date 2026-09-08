@@ -16,6 +16,8 @@ build:
   # NUL-terminated, so substituting the prefix at install time shifts the
   # literals packed behind it and corrupts them.
   detect_binary_files_with_prefix: false
+  # upstream no longer supports Intel macOS
+  skip: true  # [osx and x86_64]
 
 requirements:
   build:
