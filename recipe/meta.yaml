@@ -11,6 +11,11 @@ source:
 
 build:
   number: 0
+  # mf6 embeds the build prefix in a Fortran string literal via
+  # compiler_options(). Fortran literals are length-counted rather than
+  # NUL-terminated, so substituting the prefix at install time shifts the
+  # literals packed behind it and corrupts them.
+  detect_binary_files_with_prefix: false
 
 requirements:
   build:
@@ -26,7 +31,7 @@ test:
   commands:
     - mf6 --help
     - mf6 --license
-    - mf6 --compiler  # [not osx]
+    - mf6 --compiler
     - mf6 --compiler-opt
 
 about:
