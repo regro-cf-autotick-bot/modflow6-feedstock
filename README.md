@@ -1,7 +1,7 @@
 About modflow6-feedstock
 ========================
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/modflow6-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fs-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.usgs.gov/software/modflow-6-usgs-modular-hydrologic-model
 
@@ -28,9 +28,34 @@ Current build status
 <table><tr>
     <td>GitHub Actions</td>
     <td>
-      <a href="https://github.com/conda-forge/modflow6-feedstock/actions/workflows/conda-build.yml">
-        <img src="https://github.com/conda-forge/modflow6-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      <a href="https://github.com/conda-forge/fs-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/fs-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
+    </td>
+  </tr>
+    
+  <tr>
+    <td>Azure</td>
+    <td>
+      <details>
+        <summary>
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=336&branchName=main">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fs-feedstock?branchName=main">
+          </a>
+        </summary>
+        <table>
+          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
+          <tbody><tr>
+              <td>osx_arm64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=336&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fs-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_" alt="variant">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
     </td>
   </tr>
 </table>
