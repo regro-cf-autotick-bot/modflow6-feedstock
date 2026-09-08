@@ -22,7 +22,7 @@ requirements:
     - {{ compiler('fortran') }}   # [not win]
     - {{ stdlib("c") }}           # [not win]
     - gfortran                    # [win]
-    - meson
+    - meson >=1.7.1
     - ninja
   run:
     - libgfortran                 # [win]
@@ -33,6 +33,9 @@ test:
     - mf6 --license
     - mf6 --compiler
     - mf6 --compiler-opt
+    # mf5to6 has no --help or --version flag and prompts on stdin
+    - test -f $PREFIX/bin/mf5to6                    # [unix]
+    - if not exist %LIBRARY_BIN%\mf5to6.exe exit 1  # [win]
 
 about:
   home: https://www.usgs.gov/software/modflow-6-usgs-modular-hydrologic-model
